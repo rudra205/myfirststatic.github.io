@@ -1,0 +1,130 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.content{
+  width: 30vw;
+}
+body{
+  background-color: rgb(235, 225, 235);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+.App{
+  
+   display: flex;
+   justify-content: center;
+}
+
+.header{
+  text-align: center;
+}
+.In-ex-container{
+  display: flex;
+  margin: 10px 0;
+  background-color: white;
+  box-shadow:1px 1px  7px black;
+
+}
+.income,.expense{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   justify-content: center;
+   align-items: center;
+   margin: 10px 0;
+  
+}
+.income{
+  border-right: 1px solid rgb(78, 78, 78) ;
+}
+.h3{
+  border-bottom: 1px solid rgb(114, 114, 114);
+  padding: 10px 0;
+  margin: 0 5px;
+  
+}
+.balance{
+  margin: 0 5px;
+}
+.listitem{
+  list-style-type: none;
+  background-color: white;
+  margin: 10px 0;
+  border-right: 4px solid rgb(245, 6, 6);
+  position: relative;
+  padding: 5px 3px;
+  padding-left: 10px;
+}
+.listitem2{
+  list-style-type: none;
+  background-color: white;
+  margin: 10px 0;
+  border-right: 4px solid rgb(32, 196, 17);
+  position: relative;
+  padding: 5px 3px;
+  padding-left: 10px;
+}
+
+.delete-btn{
+  position: absolute;
+  left: -6%;
+  color: red;
+  padding: 3px 4px;
+  border: 1px solid red;
+  outline: none;
+}
+.delete-btn:hover{
+  background-color: red;
+  color: rgb(250, 250, 250);
+}
+
+.money{
+  position: absolute;
+  right: 2.5%;
+}
+
+.form{
+  margin: 15px 0;
+}
+input[type=text],input[type=number]{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  
+}
+input[type=text]:hover,input[type=number]:hover{
+  background-color: rgb(175, 174, 174);
+}
+input[type=text]:focus,input[type=number]:focus{
+  background-color:rgb(175, 173, 173) ;
+}
+.add-btn{
+  width: 100%;
+  background-color: indigo;
+  color: aliceblue;
+  border: none;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+.form-sub{
+  margin: 10p
+}
+@media screen and (max-width:800px){
+  .content{
+    width: 300px;
+  }
+}
